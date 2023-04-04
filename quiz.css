@@ -1,0 +1,87 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+.wrapper {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+button{
+  background-color:blueviolet;
+  color: #fff;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin: 5px 30px;
+  color:blueviolet;
+}
+
+.view-score:hover{
+  cursor: pointer;
+}
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+#welcome-screen, #start-timer{
+  text-align: center;
+}
+
+@media screen and (max-width: 578px) {
+  #welcome-screen h1{
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+}
+
+#main-content {
+  position: relative;
+  margin-top: 40px;
+}
+
+#questions{
+  font-size: 2em;
+  font-weight: 600;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 578px) {
+  #questions{
+    font-size: 1.25em;
+    font-weight: 400;
+  }
+}
+
+#choices div{
+  margin-bottom: 10px;
+}
+
+#highscore button{
+  margin-right: 10px;
+}
+
+#score{
+  background-color: rgb(247, 184, 238);
+  margin-bottom: 10px;
+}
+
+#results button{
+  margin-left: 10px;
+}
+#answer {
+  width: 100%;
+  color: #797979;
+  font-style: italic;
+}
